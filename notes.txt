@@ -1,0 +1,21 @@
+nul, undefined = number;
+$$ return first false statement;
+|| return first true statement;
+!! transform all to boolean;
+in JS only 5 entety are (false) - 0, "", null, ndefined, NaN;
+AAnonymous functions are created at runtime, whenever we need use this function one time.
+Prototype can add constructor metods to object
+ES6
+interpolation in js `some text ${Value}`
+default values: var y = function (first=2)
+class rectangle{
+     constructor(){
+	this.height = height;
+	this.width = width;
+     }
+     calcArea(){
+        return(this.height*this.width);
+     }
+}
+spread operator: array--> valuese (...array)
+   
