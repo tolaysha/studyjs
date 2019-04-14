@@ -6,7 +6,7 @@ $(document).ready(function (){
                 height : 'toggle'
             }, 3000
         );
-        $('#qwe').style= 'display: ';
+        $('#qwe')[0].style.display = '';
     });
     $('#qwe').on('click', function(){
         $('#julia').animate(
@@ -15,6 +15,7 @@ $(document).ready(function (){
                 height : 'toggle'
             }, 3000
         );
+        $('#qwe')[0].style.display = 'none';
     });
 
 });
