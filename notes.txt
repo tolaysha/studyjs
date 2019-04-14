@@ -18,4 +18,6 @@ class rectangle{
      }
 }
 spread operator: array--> valuese (...array)
+localstorage
+
    

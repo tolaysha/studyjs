@@ -7,4 +7,4 @@ first.addEventListener('change', qwe =>{
 });  
 second.addEventListener('change', function (){
     result.innerHTML = `result = ${+first.value+(+this.value)}`;
-});     
+});       
