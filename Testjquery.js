@@ -17,5 +17,16 @@ $(document).ready(function (){
         );
         $('#qwe')[0].style.display = 'none';
     });
+    $('#qwe').on('click', function(){
+        $('#more').on('click', function () {
+            $('#modal')[0].style.display= 'block';
+        });
+         
+    });
 
 });
+//альтернативы jquery в nativejs
+//$-->document.querySelectorAll('sds').foreach();
+//.classlist
+//$.ajax --> fetch
+//animations
