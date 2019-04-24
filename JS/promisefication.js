@@ -33,7 +33,7 @@ function httpGet(url) {
   /*Как видно, внутри функции объект XMLHttpRequest создаётся и отсылается как обычно,
     при onload/onerror вызываются, соответственно, resolve (при статусе 200) или reject. */
 
-httpGet("C:/Users/akuzmin/Desktop/studyjs/server/user.json")
+httpGet("server/user.json")
 .then(
     response => alert(`Fulfilled: ${response}`),
     error => alert(`Rejected: ${error}`)
