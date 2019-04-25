@@ -3,7 +3,7 @@ var xhr = new XMLHttpRequest();
 
       
 // 2. Конфигурируем его: GET-запрос на URL 'phones.json'
-xhr.open('GET', '/server/user.json', false);
+xhr.open('GET', 'JS/user.json', false);
 
 xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
 // 3. Отсылаем запрос
