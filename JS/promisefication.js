@@ -3,7 +3,7 @@
 В качестве примера сделаем такую обёртку для запросов при помощи XMLHttpRequest.
 Функция httpGet(url) будет возвращать промис, который при успешной загрузке данных с url будет переходить в fulfilled с этими данными,
 а при ошибке – в rejected с информацией об ошибке: */
-debugger;
+
 
 function httpGet(url) {
 
@@ -11,7 +11,7 @@ function httpGet(url) {
 
         var xhr = new XMLHttpRequest();
         xhr.open('GET', url, true);
-        xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
+       // xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
         
         xhr.onload = function () {
             if (this.status == 200) {
@@ -22,7 +22,6 @@ function httpGet(url) {
                 reject(error);
             }
         };
-
         xhr.onerror = function () {
             reject(new Error("Network Error"));
         };
@@ -34,8 +33,9 @@ function httpGet(url) {
 /*Как видно, внутри функции объект XMLHttpRequest создаётся и отсылается как обычно,
   при onload/onerror вызываются, соответственно, resolve (при статусе 200) или reject. */
 
-httpGet("server/user.json")
+httpGet("/JS/user.json")
     .then(
-        response => alert(`Fulfilled: ${response}`),
+        response => console.log(`Fulfilled: ${response}`),
         error => alert(`Rejected: ${error}`)
     );
+}
