@@ -23,5 +23,6 @@ arguments: all params of function in object
 -----------
 fetch
 ajax
+call, apply
 
    
