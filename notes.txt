@@ -19,6 +19,7 @@ class rectangle{
 }
 spread operator: array--> valuese (...array)
 localstorage // JSON.Parse(), JSON.stingify()
+arguments: all params of function in object
 -----------
 fetch
 ajax
