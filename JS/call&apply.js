@@ -11,7 +11,7 @@ function showFullName() {
   };
   
   // функция вызовется с this=user
-  showFullName.call(user) // "Василий Петров"
+  showFullName.call(user)// "Василий Петров"
 //call end
 //apply begin
 //============================================================================
@@ -45,3 +45,22 @@ console.log( Math.max.apply(null, arr) ); // 5
   }
   
   printArgs(1, 2, 3);
+
+  //task1
+  //reduce begin
+  var arr = [1, 2, 3, 4, 5]
+
+// для каждого элемента массива запустить функцию,
+// промежуточный результат передавать первым аргументом далее
+var result = arr.reduce((sum, current) =>
+  {return sum + current;}
+, 0);
+ //reduce end
+                        function sumArgs() {
+                            // запустим reduce из массива напрямую
+                            return [].reduce.call(arguments, function(a, b) {
+                            return a + b;
+                            });
+                        }
+                        
+                        alert( sumArgs(4, 5, 6) ); // 15

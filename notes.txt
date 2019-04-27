@@ -25,4 +25,6 @@ ajax: var xhr = new XMLHttpRequest();xhr.open('GET', url, false);xhr.setRequestH
 fetch
 call, apply
 bind
+promise задачи
+
    
