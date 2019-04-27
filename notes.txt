@@ -18,11 +18,11 @@ class rectangle{
      }
 }
 spread operator: array--> valuese (...array)
-localstorage // JSON.Parse(), JSON.stingify()
+localstorage.setItem // JSON.Parse(), JSON.stingify()
 arguments: all params of function in object
+ajax: var xhr = new XMLHttpRequest();xhr.open('GET', url, false);xhr.setRequestHeader();xhr.send();
 -----------
 fetch
-ajax
 call, apply
-
+bind
    

@@ -38,4 +38,4 @@ httpGet("/JS/user.json")
         response => console.log(`Fulfilled: ${response}`),
         error => alert(`Rejected: ${error}`)
     );
-}
+
