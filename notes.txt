@@ -7,7 +7,7 @@ AAnonymous functions are created at runtime, whenever we need use this function 
 Prototype can add constructor metods to object
 ES6
 interpolation in js `some text ${Value}`
-default values: var y = function (first=2)
+default values: var y = function (first=2){}
 class rectangle{
      constructor(){
 	this.height = height;
@@ -21,9 +21,9 @@ spread operator: array--> valuese (...array)
 localstorage.setItem // JSON.Parse(), JSON.stingify()
 arguments: all params of function in object
 ajax: var xhr = new XMLHttpRequest();xhr.open('GET', url, false);xhr.setRequestHeader();xhr.send();
+we can init function with 1 param, but call with several(arguments)
 -----------
 fetch
-call, apply
 bind
 promise задачи
 
