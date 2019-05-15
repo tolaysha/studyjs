@@ -25,6 +25,6 @@ we can init function with 1 param, but call with several(arguments)
 -----------
 fetch
 bind
-promise задачи
+promise задачи?
 
    
