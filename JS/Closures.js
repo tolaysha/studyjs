@@ -64,4 +64,30 @@ a.speedUp();
 console.log(a.speed)
 
 //самое примитивное замыкание
+ 
+var func = function(){
+    var name = 'John'
+    return function(){ //эта функция замыкается на контекст выше
+        console.log(name)
+    }
+}
+var qw = func();
+qw();
+//общий пример
+var incrementUntil  = function(max){
+    if(num >= max) return num
+    num++
+    incrementUntil(max);
+}
+num = 0;
+var myFunc = function(){
+    var num = -1;
+    incrementUntil(3)
+    console.log(num)
+    return num
+}
+myFunc()
+console.log(num)
+
+//генератор url
 
