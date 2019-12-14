@@ -1,0 +1,14 @@
+//first way near 0.75s (more faster) 
+function isPolindrom(str){
+    for (var i = 0;i<str.length;i++){
+        if (str[i] !== str[str.length-(i+1)]) console.log(false)    
+    } 
+}
+isPolindrom('01111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110');
+//second way near 0.81s
+function isPolindrom(str){
+    (str===str.split('').reverse().join(''))
+        ?console.log(true)
+        :console.log(false)
+}
+isPolindrom('01111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110');
