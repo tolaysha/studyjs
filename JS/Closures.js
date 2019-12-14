@@ -99,3 +99,17 @@ var ru = genereteDomenFunction('ru');
 console.log(ru('yandex'))
 var com = genereteDomenFunction('com');
 console.log(com('google'))
+
+// написать свою функцию bind
+//example of work
+/*
+ function logPerson(){
+     console.log(`Person:${this.name},${this.age},${this.job}}`)
+ }
+ const person1 = {name:'Michle', age:22, job:'Frontend'}
+ const person2 = {name:'Michle2', age:21, job:'Frontend2'}
+
+ bind(person1, logPerson)
+ bind(person2, logPerson)
+
+*/
