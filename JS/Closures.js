@@ -89,5 +89,13 @@ var myFunc = function(){
 myFunc()
 console.log(num)
 
-//генератор url
-
+//генератор доменов
+var genereteDomenFunction = function (domen){
+    return function(name){
+        return `https://${name}.${domen}`
+    }
+}
+var ru = genereteDomenFunction('ru');
+console.log(ru('yandex'))
+var com = genereteDomenFunction('com');
+console.log(com('google'))
