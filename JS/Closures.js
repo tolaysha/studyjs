@@ -26,7 +26,20 @@ var counter2 = counter()
 counter1()
 counter1()
 counter2()
-//cat pattern
+//counter with function metods
+function makeCounter(){
+    function counter(){
+        return counter.count++;
+    }
+    counter.count = 0;
+
+    return counter;
+}
+let counter = makeCounter()
+console.log(counter())
+console.log(counter())
+
+//car pattern
 //выведет единицы так как внутри а свой спид, не являющийся ссылкой на спид в каре
 var car = function(){
     speed = 1;
@@ -100,16 +113,22 @@ console.log(ru('yandex'))
 var com = genereteDomenFunction('com');
 console.log(com('google'))
 
-// написать свою функцию bind
+// написать свою функцию
 //example of work
-/*
- function logPerson(){
-     console.log(`Person:${this.name},${this.age},${this.job}}`)
- }
- const person1 = {name:'Michle', age:22, job:'Frontend'}
- const person2 = {name:'Michle2', age:21, job:'Frontend2'}
 
- bind(person1, logPerson)
- bind(person2, logPerson)
+function logPerson(){
+    console.log(`Person:${this.name},${this.age},${this.job}}`)
+}
+const person1 = {name:'Michle', age:22, job:'Frontend'}
+const person2 = {name:'Michle2', age:21, job:'Frontend2'}
 
-*/
+var bind = function(context, func){
+    func2()
+}
+
+bind(person1, logPerson)
+bind(person2, logPerson)
+
+//property [[enviroment]]
+
+
